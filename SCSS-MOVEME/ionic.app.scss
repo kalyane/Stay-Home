@@ -1,0 +1,70 @@
+$calm: #F1F7ED;
+$balanced: #91C7B1;
+$energized: #950952;
+$assertive: #0E7C7B;
+$royal: #3729BC;
+$dark: #272932;
+$SIDEMENU_TOP: #0E7C7B;
+$SIDEMENU_BOTTOM: #91C7B1;
+$SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.side-menu-item {
+	background: none;
+	color: white;
+	font-weight: 300;
+	border: 0px;
+	.item-content {
+		background: none;
+		&.activated {
+			background: $SIDEMENU_TRANSPARENCY;
+		}
+		
+	}
+	&.active-page-highlight {
+		.item-content {
+			background: $SIDEMENU_TRANSPARENCY;
+		}
+		
+	}
+}
+.side-menu-gradient {
+	background: -webkit-linear-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+	background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+	background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+	background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+}
+
+.profile-image {
+	img {
+		border-radius: 50%;
+		margin: 10px;
+		border: 4px solid $SIDEMENU_TRANSPARENCY;
+		-webkit-box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+	}
+	
+}
+.button-bar > .button: first-child {
+	border-radius: 0px;
+}
+
+.button-bar > .button: last-child {
+	border-radius: 0px;
+}
+
+.button-bar > .button {
+	margin: 0;
+	padding-bottom: 15px;
+	line-height: 0;
+}
+
+ion-view,.pane,.view {
+	background-color: #F1F7ED;
+}
+
+body {
+	color: #272932;
+}
+

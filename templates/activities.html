@@ -1,0 +1,24 @@
+<ion-view title="Activities" id="page18">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <div class="spacer" style="width: 300px; height: 26px;"></div>
+    <h3 id="activities-heading17" style="color:#272932;">What are the activities that you would like to be doing at home?</h3>
+    <form id="activities-form6" class="list">
+      <h5 id="activities-heading18" style="color:#272932;font-weight:600;">Suggestions</h5>
+      <ion-list id="activities-list6">
+        <ion-item class="item-icon-left" id="activities-list-item22" ui-sref="menu.editActivity({})" ng-repeat="activity in activities">
+          <i class="icon ion-android-checkbox-outline-blank"></i>{{activity.title}}</ion-item>
+      </ion-list>
+    </form>
+    <a ui-sref="menu.schedule()" id="activities-button22" class="button button-assertive button-block">Set Activities</a>
+    <div id="activities-button-bar5" class="button-bar button-tabs">
+      <button id="activities-button23" style="font-weight:lighter;font-size:10px;" class="button button-assertive button-large button-block icon ion-heart active">
+        <br>Activities</button>
+      <a ui-sref="menu.schedule()" id="activities-button24" style="font-weight:lighter;font-size:10px;" class="button button-assertive button-large icon ion-ios-calendar">
+        <br> Schedule</a>
+      <a ui-sref="menu.friends()" id="activities-button25" style="font-weight:lighter;font-size:10px;" class="button button-assertive button-large button-block icon ion-android-contacts">
+        <br>Friends</a>
+      <button id="activities-button26" style="font-weight:lighter;font-size:10px;" class="button button-assertive button-large button-block icon ion-trophy">
+        <br>Awards</button>
+    </div>
+  </ion-content>
+</ion-view>
